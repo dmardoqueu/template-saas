@@ -3,8 +3,6 @@ import { db } from "@/app/lib/firebase";
 import stripe from "@/app/lib/stripe";
 import { NextRequest, NextResponse } from "next/server";
 
-// Se você estiver usando Firebase v9 (modular SDK), descomente:
-// import { collection, doc, getDoc } from "firebase/firestore";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
     try {
